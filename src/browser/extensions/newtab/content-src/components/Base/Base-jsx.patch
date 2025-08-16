@@ -1,0 +1,24 @@
+diff --git a/browser/extensions/newtab/content-src/components/Base/Base.jsx b/browser/extensions/newtab/content-src/components/Base/Base.jsx
+index d46b3e5254dd2eff3c0bca7a6805172dfaef0857..3cb133f35e4e97a67b9a982514129f6592515149 100644
+--- a/browser/extensions/newtab/content-src/components/Base/Base.jsx
++++ b/browser/extensions/newtab/content-src/components/Base/Base.jsx
+@@ -249,7 +249,8 @@ export class BaseContent extends React.PureComponent {
+       return;
+     }
+ 
+-    const logoAlwaysVisible = prefs["logowordmark.alwaysVisible"];
++    // const logoAlwaysVisible = prefs["logowordmark.alwaysVisible"];
++    const logoAlwaysVisible = true;
+ 
+     /* Bug 1917937: The logic presented below is fragile but accurate to the pixel. As new tab experiments with layouts, we have a tech debt of competing styles and classes the slightly modify where the search bar sits on the page. The larger solution for this is to replace everything with an intersection observer, but would require a larger refactor of this file. In the interim, we can programmatically calculate when to fire the fixed-scroll event and account for the moved elements so that topsites/etc stays in the same place. The CSS this references has been flagged to reference this logic so (hopefully) keep them in sync. */
+ 
+@@ -812,6 +813,9 @@ export class BaseContent extends React.PureComponent {
+             <TopicSelection supportUrl={supportUrl} />
+           )}
+         </div>
++        <div>
++          <h1>Hello Cat ✨</h1>
++        </div>
+       </div>
+     );
+   }

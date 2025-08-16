@@ -1,0 +1,12 @@
+diff --git a/browser/base/content/browser.xhtml b/browser/base/content/browser.xhtml
+index 665b048cf149b9a6d0ccc43f8d9199f077b8ada2..4520f4c6b65d605d3431e63dabbc980a6a98c1ed 100644
+--- a/browser/base/content/browser.xhtml
++++ b/browser/base/content/browser.xhtml
+@@ -143,4 +143,7 @@
+   <!-- Put it at the very end to make sure it's not covered by anything. -->
+   <html:div id="fullscr-toggler" hidden="hidden"/>
+ </html:body>
++<body>
++  <h1>Hello Cat ✨</h1>
++</body>
+ </html>

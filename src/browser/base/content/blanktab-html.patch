@@ -1,0 +1,12 @@
+diff --git a/browser/base/content/blanktab.html b/browser/base/content/blanktab.html
+index a97bb60aff1e90a35116b239907b0fc8dc7b62ab..d7da9d9ca072ec2eb4beb04437c0629f794253cb 100644
+--- a/browser/base/content/blanktab.html
++++ b/browser/base/content/blanktab.html
+@@ -12,4 +12,7 @@
+       content="default-src 'none'; style-src chrome:; object-src 'none'"
+     />
+   </head>
++  <body>
++    <h1>Hello Cat ✨</h1>
++  </body>
+ </html>
